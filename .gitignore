@@ -1,0 +1,9 @@
+# Keep your secrets
+secret/*
+!secret/.gitkeep
+
+# I love you macOS
+.DS_Store
+
+__pycache__/
+.pytest_cache/
