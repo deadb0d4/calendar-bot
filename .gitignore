@@ -1,6 +1,8 @@
 # Keep your secrets
 secret/*
 !secret/.gitkeep
+stash/*
+!stash/.gitkeep
 
 # I love you macOS
 .DS_Store

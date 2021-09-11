@@ -29,6 +29,12 @@ def now(gmt: int) -> Date:
     return from_utc_datetime(gmt, datetime.datetime.now(datetime.timezone.utc))
 
 
+def after(date: Date, minutes: int) -> Date:
+    d = to_utc_datetime(date)
+    d += datetime.timedelta(minutes=minutes)
+    return from_utc_datetime(date.gmt, d)
+
+
 def to_timezone_string(date: Date) -> str:
     day = f"{date.year}-{str(date.month).zfill(2)}-{str(date.day).zfill(2)}"
     time = f"{str(date.hour).zfill(2)}:{str(date.minutes).zfill(2)}:00"

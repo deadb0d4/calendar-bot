@@ -12,9 +12,9 @@ The bot can create simple events and analyzes your schedule.
 
 - [x] Dockerfile
 
-- [ ] Prune API
+- [x] Prune API
 
-- [ ] Refactor code, make it readable
+- [x] Refactor code, make it readable
 
 - [ ] Add more options to parser
 
