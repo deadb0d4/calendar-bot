@@ -7,9 +7,7 @@ def test_secret_files():
 
     Refer to docs for their description and format
     """
-    config = Config('./secret')
-    assert hasattr(config, 'basic')
-    assert hasattr(config, 'bot')
-    assert hasattr(config, 'calendar')
-    assert hasattr(config, 'credentials')
-    assert hasattr(config, 'style')
+    config = Config("./secret")
+    properties = ["basic", "bot", "calendar", "credentials", "style"]
+    for prop in properties:
+        assert hasattr(config, prop)
